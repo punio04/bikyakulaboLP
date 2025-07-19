@@ -1356,6 +1356,28 @@ fixed
   margin-top: 5px;
 }
 
+.remodal-cancel {
+  font-size: 1.4rem;
+  color: #fff;
+  background: #a98b53;
+  margin-top: 20px;
+  padding: 7px 0;
+}
+
+.remodal {
+  box-sizing: border-box;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 35px;
+  transform: translate3d(0, 0, 0);
+  color: #2b2e38;
+  background: #e9f6fc;
+}
+
+.remodal-cancel:hover {
+  background: #333!important;
+}
+
 @media only screen and (max-width: 768px) {
   /* ----------------------------------------------------------
     Common Setting
