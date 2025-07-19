@@ -2205,7 +2205,7 @@ fixed
   .fixed .layout a {
     font-size: 5.5vw;
     line-height: 1.5rem;
-    padding: 15px 0;
+    padding: 24px 0;
   }
 
   .fixed .layout a:after {
@@ -2217,6 +2217,15 @@ fixed
     right: 2vw;
   }
 }
+
+@media only screen and (max-width: 550px) {
+  .fixed .layout a {
+    font-size: 5.5vw;
+    line-height: 1.5rem;
+    padding: 15px 0;
+  }
+}
+
 
 /* ----------------------------------------------------------
 /* ----------------------------------------------------------
