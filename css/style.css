@@ -1378,6 +1378,10 @@ fixed
   background: #333!important;
 }
 
+.img img {
+  width: 413px;
+}
+
 @media only screen and (max-width: 768px) {
   /* ----------------------------------------------------------
     Common Setting
