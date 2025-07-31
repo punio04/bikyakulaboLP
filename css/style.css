@@ -1345,30 +1345,209 @@ fixed
 }
 
 .remodal-cancel {
-  font-size: 1.4rem!important;
-  color: #fff!important;
-  background: #a98b53!important;
-  margin-top: 20px!important;
-  padding: 7px 0!important;
+  font-size: 1.4rem !important;
+  color: #fff !important;
+  background: #a98b53 !important;
+  margin-top: 20px !important;
+  padding: 7px 0 !important;
 }
 
 .remodal {
-  box-sizing: border-box!important;
-  width: 100%!important;
-  margin-bottom: 10px!important;
-  padding: 35px!important;
-  transform: translate3d(0, 0, 0)!important;
-  color: #2b2e38!important;
-  background: #e9f6fc!important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  margin-bottom: 10px !important;
+  padding: 35px !important;
+  transform: translate3d(0, 0, 0) !important;
+  color: #2b2e38 !important;
+  background: #e9f6fc !important;
 }
 
 .remodal-cancel:hover {
-  background: #333!important;
+  background: #333 !important;
 }
 
 .img img {
   width: 413px;
 }
+
+.logo {
+  width: 75%;
+}
+
+
+
+
+
+
+
+
+
+#logo {
+  background: #003040;
+  color: #fff;
+  font-size: 14px;
+}
+
+@media (max-width: 1280px) {
+  #logo_inner {
+    width: auto;
+  }
+}
+
+#logo_inner {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#logo .logo_content:last-of-type {
+  border-right: 0px;
+  padding-right: 0;
+}
+
+@media (max-width: 1280px) {
+
+  #logo_logo,
+  #logo_info {
+    text-align: center;
+  }
+}
+
+#logo_logo {
+  position: relative;
+}
+
+#logo_logo a {
+  display: block;
+  transition: all 0.5s ease;
+}
+
+#logo a {
+  color: #fff;
+}
+
+#logo_logo picture {
+  display: block;
+}
+
+@media (max-width: 1280px) {
+
+  #header_logo .image,
+  #logo_logo .image {
+    height: auto;
+    width: 50%;
+  }
+}
+
+#logo_logo .image {
+  height: 50px;
+  width: auto;
+}
+
+@media (max-width: 1280px) {
+
+  #logo_logo,
+  #logo_info {
+    text-align: center;
+  }
+}
+
+#logo_logo_area:only-of-type #logo_info p {
+  text-align: center;
+}
+
+#logo_logo_area:only-of-type #logo_info p {
+  text-align: center;
+}
+
+@media (max-width: 1280px) {
+
+  .logo-catchcopy,
+  #logo_info p {
+    font-size: 0.6rem;
+    letter-spacing: 0.6em;
+    margin: 20px auto 20px;
+  }
+}
+
+#logo_info p {
+  line-height: 2;
+  margin-top: calc(0.5em - 0.5lh);
+  margin-bottom: calc(0.5em - 0.5lh);
+}
+
+#logo_info p {
+  font-family: "HannariMincho-Regular", "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Verdana, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.7;
+  letter-spacing: .6em;
+}
+
+.c-sns-icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  gap: 0.8em;
+  color: #000000;
+}
+
+#logo a {
+  color: #fff;
+}
+
+.c-sns-icons-item {
+  display: grid;
+  place-items: stretch;
+  width: 1em;
+  height: 1em;
+}
+
+.c-sns-icons-item--x {
+  --tcd-sns-icon: var(--tcd-sns-icon--x);
+}
+
+#logo_logo_area:only-of-type {
+  flex: 0 0 auto;
+  width: 860px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#logo .logo_content {
+  width: calc(100% / 3);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 70px 0px;
+}
+
+#logo_logo_area {
+  display: flex;
+  flex-direction: column;
+  gap: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
   /* ----------------------------------------------------------
@@ -1400,7 +1579,7 @@ header
   }
 
   .header .layout .left .logo {
-    width: 66vw;
+    width: 35vw;
   }
 
   .header .layout .left .box {
@@ -1880,7 +2059,7 @@ voice
   }
 
   .remodal {
-    padding: 15px!important;
+    padding: 15px !important;
   }
 
   /* ----------------------------------------------------------
@@ -2229,6 +2408,22 @@ fixed
     position: absolute;
     top: -12vw;
     right: 2vw;
+  }
+
+
+
+  #logo_inner {
+    width: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #logo .logo_content {
+    width: auto;
+    border-right: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 70px 0px;
   }
 }
 

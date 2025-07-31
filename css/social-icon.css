@@ -1,0 +1,87 @@
+:root {
+  --tcd-sns-icon: ;
+  --tcd-sns-icon-size: 18px;
+  --tcd-sns-icon--x: var(--tcd-icon--x);
+  --tcd-sns-icon--facebook: var(--tcd-icon--facebook);
+  --tcd-sns-icon--line: var(--tcd-icon--line);
+  --tcd-sns-icon--youtube: var(--tcd-icon--youtube);
+  --tcd-sns-icon--instagram: var(--tcd-icon--instagram);
+  --tcd-sns-icon--tiktok: var(--tcd-icon--tiktok);
+  --tcd-sns-icon--pinterest: var(--tcd-icon--pinterest);
+  --tcd-sns-icon--note: var(--tcd-icon--note);
+  --tcd-sns-icon--mail: var(--tcd-icon--mail);
+  --tcd-sns-icon--site: var(--tcd-icon--site);
+}
+
+.c-sns-icons-item--x {
+  --tcd-sns-icon: var(--tcd-sns-icon--x);
+}
+
+.c-sns-icons-item--facebook {
+  --tcd-sns-icon: var(--tcd-sns-icon--facebook);
+}
+
+.c-sns-icons-item--line {
+  --tcd-sns-icon: var(--tcd-sns-icon--line);
+}
+
+.c-sns-icons-item--youtube {
+  --tcd-sns-icon: var(--tcd-sns-icon--youtube);
+}
+
+.c-sns-icons-item--instagram {
+  --tcd-sns-icon: var(--tcd-sns-icon--instagram);
+}
+
+.c-sns-icons-item--tiktok {
+  --tcd-sns-icon: var(--tcd-sns-icon--tiktok);
+}
+
+.c-sns-icons-item--pinterest {
+  --tcd-sns-icon: var(--tcd-sns-icon--pinterest);
+}
+
+.c-sns-icons-item--note {
+  --tcd-sns-icon: var(--tcd-sns-icon--note);
+}
+
+.c-sns-icons-item--mail {
+  --tcd-sns-icon: var(--tcd-sns-icon--mail);
+}
+
+.c-sns-icons-item--site {
+  --tcd-sns-icon: var(--tcd-sns-icon--site);
+}
+
+.c-sns-icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: var(--tcd-sns-icon-size);
+  gap: 0.8em;
+  color: #000000;
+}
+
+.c-sns-icons-item {
+  display: grid;
+  place-items: stretch;
+  width: 1em;
+  height: 1em;
+}
+
+@media (any-hover: hover) {
+  .c-sns-icons-item:hover {
+    opacity: 0.5;
+  }
+}
+
+.c-sns-icons--color .c-sns-icons-item:before {
+  content: '';
+  background: var(--tcd-sns-icon) no-repeat center / contain;
+}
+
+.c-sns-icons--mono .c-sns-icons-item:before {
+  content: '';
+  background-color: currentColor;
+  mask: var(--tcd-sns-icon) no-repeat center / contain;
+}
